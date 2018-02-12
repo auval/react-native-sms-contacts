@@ -5,3 +5,6 @@ include ':app'
 include ':pgcontacts'
 project(':pgcontacts').projectDir = new File(
         rootProject.projectDir, '../node_modules/react-native-paged-contacts/android/')
+
+include ':rnsms'
+project(':rnsms').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-sms/android')

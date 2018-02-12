@@ -68,11 +68,13 @@ android {
 
 dependencies {
     compile fileTree(dir: "libs", include: ["*.jar"])
-    compile project(':pgcontacts')  // <— Add this
+
 
     compile "com.android.support:appcompat-v7:26.1.0"
     compile "com.facebook.react:react-native:+"  // From node_modules
 
+    compile project(':pgcontacts')  // <— Add this
+    compile project(':rnsms') // and follow instructions: https://github.com/tkporter/react-native-sms
 
 }
 
